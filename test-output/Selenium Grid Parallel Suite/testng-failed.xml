@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Selenium Grid Parallel Suite]" parallel="methods">
+  <test name="Selenium Grid Parallel Tests(failed)" parallel="methods">
+    <classes>
+      <class name="com.Grid.Tests.AmazonTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="amazonTest_2"/>
+        </methods>
+      </class> <!-- com.Grid.Tests.AmazonTest -->
+      <class name="com.Grid.Tests.GithubTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Grid.Tests.GithubTest -->
+    </classes>
+  </test> <!-- Selenium Grid Parallel Tests(failed) -->
+</suite> <!-- Failed suite [Selenium Grid Parallel Suite] -->
